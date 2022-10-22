@@ -97,9 +97,8 @@ public class resultsPage extends javax.swing.JFrame {
     private void getResultsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_getResultsActionPerformed
         // TODO add your handling code here:
         String htNo = hallTicketNo.getText();
-        int htParsed = Integer.parseInt(htNo);
         this.setVisible(false);
-        new showResults(htParsed);       
+        new showResults(htNo).setVisible(true);   
     }//GEN-LAST:event_getResultsActionPerformed
 
     /**
